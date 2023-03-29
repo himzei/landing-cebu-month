@@ -2,6 +2,7 @@ import About from "../components/about/About";
 import Consulting from "../components/consulting/Consulting";
 import Curriculum from "../components/curriculum/Curriculum";
 import Main from "../components/main/Main";
+import Outline from "../components/outline/Outline";
 import Portfolio from "../components/portfolio/Portfolio";
 import Special from "../components/special/Special";
 
@@ -19,6 +20,8 @@ export default function Home() {
       <Curriculum />
 
       <Portfolio />
+
+      <Outline />
 
       <Consulting />
     </>
