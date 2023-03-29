@@ -37,10 +37,9 @@ export default function Header() {
   const menuList = [
     { name: "회사소개", link: "test1", link2: "/#1" },
     { name: "장점", link: "test2", link2: "/#2" },
-    { name: "차별성", link: "test3", link2: "/#3" },
-    { name: "개요", link: "test4", link2: "/#4" },
-    { name: "커리큘럼", link: "test5", link2: "/#5" },
-    { name: "사진", link: "test6", link2: "/#6" },
+    { name: "커리큘럼", link: "test3", link2: "/#3" },
+    { name: "사진", link: "test4", link2: "/#4" },
+    { name: "비용", link: "test5", link2: "/#5" },
   ];
   const [scroll, setScroll] = useState(true);
   const { pathname } = useLocation();
@@ -114,7 +113,7 @@ export default function Header() {
               )}
             </HStack>
             <HStack spacing={5}>
-              <a href="/#7">
+              <a href="/#6">
                 <Button bg="yellow.600">
                   <Text>빠른견적 문의</Text>
                 </Button>

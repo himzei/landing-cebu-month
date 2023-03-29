@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import About from "../components/about/About";
 import Consulting from "../components/consulting/Consulting";
 import Curriculum from "../components/curriculum/Curriculum";
@@ -10,20 +11,43 @@ export default function Home() {
   return (
     <>
       {/* 메인 슬라이드 */}
-
       <Main />
 
-      <About />
+      <div id="1">
+        <Element name="test1" className="test1">
+          <About />
+        </Element>
+      </div>
 
-      <Special />
+      <div id="2">
+        <Element name="test2" className="test2">
+          <Special />
+        </Element>
+      </div>
 
-      <Curriculum />
+      <div id="3">
+        <Element name="test3" className="test3">
+          <Curriculum />
+        </Element>
+      </div>
 
-      <Portfolio />
+      <div id="4">
+        <Element name="test4" className="test4">
+          <Portfolio />
+        </Element>
+      </div>
 
-      <Outline />
+      <div id="5">
+        <Element name="test5" className="test5">
+          <Outline />
+        </Element>
+      </div>
 
-      <Consulting />
+      <div id="6">
+        <Element name="test6" className="test6">
+          <Consulting />
+        </Element>
+      </div>
     </>
   );
 }

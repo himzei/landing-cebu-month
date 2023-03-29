@@ -97,9 +97,11 @@ export default function Main() {
             bg: "yellow.600",
           }}
         >
-          <Text color="white" fontWeight="600">
-            상담신청하기
-          </Text>
+          <a href="/#6">
+            <Text color="white" fontWeight="600">
+              상담신청하기
+            </Text>
+          </a>
         </Box>
       </VStack>
     </Box>
