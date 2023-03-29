@@ -18,24 +18,25 @@ export default function Footer() {
             md: "repeat(3, 1fr)",
             lg: "repeat(6, 1fr)",
           }}
+          color="gray.600"
         >
           <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
-            <Text color="white">개인정보처리방침</Text>
+            <Text>개인정보처리방침</Text>
           </HStack>
           <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
-            <Text color="white">서비스이용약관</Text>
+            <Text>서비스이용약관</Text>
           </HStack>
           <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
-            <Text color="white">업체소개</Text>
+            <Text>업체소개</Text>
           </HStack>
           <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
-            <Text color="white">공지사항</Text>
+            <Text>공지사항</Text>
           </HStack>
           <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
-            <Text color="white">고객센터</Text>
+            <Text>고객센터</Text>
           </HStack>
           <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
-            <Text color="white">패밀리사이트</Text>
+            <Text>패밀리사이트</Text>
           </HStack>
         </Grid>
       </HStack>
@@ -44,7 +45,7 @@ export default function Footer() {
         w={{ sm: "360px", md: "3xl", lg: "5xl", xl: "6xl", "2xl": "7xl" }}
         py="8"
         h="full"
-        color="gray.200"
+        color="gray.300"
         justifyContent="space-between"
         // templateColumns={{
         //   sm: "repeat(1, 1fr)",
