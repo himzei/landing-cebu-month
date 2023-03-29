@@ -87,7 +87,6 @@ export default function Header() {
         justifyContent={"center"}
         h="80px"
         boxShadow={"sm"}
-        bg="white"
         position="fixed"
         transform={scroll ? "translateY(0px)" : "translateY(-80px)"}
         transition="0.4s"
@@ -112,13 +111,16 @@ export default function Header() {
                     className={menuList[i].link}
                     to={menuList[i].link}
                   >
-                    <Button
-                      variant="ghost"
+                    <Text
+                      px="4	"
+                      as="span"
+                      cursor="pointer"
+                      color="white"
                       _hover={{ color: "red.500" }}
                       _focus={{ color: "red.500" }}
                     >
                       {menuList[i].name}
-                    </Button>
+                    </Text>
                   </LinkScroll>
                 ) : (
                   <a href={menuList[i].link2}>
@@ -135,7 +137,9 @@ export default function Header() {
             </HStack>
             <HStack spacing={5}>
               <a href="/#7">
-                <Button colorScheme={"red"}>빠른견적 문의</Button>
+                <Button colorScheme={"yellow"}>
+                  <Text>빠른견적 문의</Text>
+                </Button>
               </a>
               <Box
                 p="2"
