@@ -1,4 +1,4 @@
-import { Box, HStack, Text, VStack } from "@chakra-ui/react";
+import { Text, VStack } from "@chakra-ui/react";
 import BackImage from "../../assets/jpg/special/1.jpg";
 import SpecialItem from "./SpecialItem";
 
