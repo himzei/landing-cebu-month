@@ -48,10 +48,11 @@ export default function Header() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    document.addEventListener("wheel", (event) => {
-      if (event.deltaY < 0) {
+    document.addEventListener("wheel", () => {
+      console.log(window.scrollY);
+      if (window.scrollY < 10) {
         setScroll(true);
-      } else if (event.deltaY > 0) {
+      } else {
         setScroll(false);
       }
     });
@@ -88,14 +89,14 @@ export default function Header() {
         h="80px"
         boxShadow={"sm"}
         position="fixed"
-        transform={scroll ? "translateY(0px)" : "translateY(-80px)"}
         transition="0.4s"
         zIndex={999}
+        bg={scroll ? "transparent" : "gray.900"}
       >
         <HStack justifyContent={"space-between"} w="7xl" h="full" px="2">
           <Box h="full" p="4">
             <Link to="/">
-              <Image h="full" src={Logo} />
+              <Image h="70%" src={Logo} />
             </Link>
           </Box>
           <HStack spacing={8} transition="0.4s">
@@ -116,8 +117,8 @@ export default function Header() {
                       as="span"
                       cursor="pointer"
                       color="white"
-                      _hover={{ color: "red.500" }}
-                      _focus={{ color: "red.500" }}
+                      _hover={{ color: "yellow.600" }}
+                      _focus={{ color: "yellow.600" }}
                     >
                       {menuList[i].name}
                     </Text>
@@ -126,8 +127,8 @@ export default function Header() {
                   <a href={menuList[i].link2}>
                     <Button
                       variant="ghost"
-                      _hover={{ color: "red.500" }}
-                      _focus={{ color: "red.500" }}
+                      _hover={{ color: "yello.600" }}
+                      _focus={{ color: "yello.600" }}
                     >
                       {menuList[i].name}
                     </Button>
@@ -137,7 +138,7 @@ export default function Header() {
             </HStack>
             <HStack spacing={5}>
               <a href="/#7">
-                <Button colorScheme={"yellow"}>
+                <Button bg="yellow.600">
                   <Text>빠른견적 문의</Text>
                 </Button>
               </a>

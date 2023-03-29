@@ -2,14 +2,14 @@ import { VStack, Grid, Text, HStack } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <VStack w="full" justifyContent={"center"} boxShadow={"sm"} bg="gray.300">
+    <VStack w="full" justifyContent={"center"} boxShadow={"sm"} bg="gray.900">
       <HStack
         justifyContent={"center"}
         w="full"
         borderTop="1px"
         borderBottom="1px"
-        borderColor="gray.400"
-        bg="gray.200"
+        borderColor="gray.700"
+        bg="gray.800"
       >
         <Grid
           w={{ sm: "sm", md: "xl", lg: "7xl" }}
@@ -19,23 +19,23 @@ export default function Footer() {
             lg: "repeat(6, 1fr)",
           }}
         >
-          <HStack bg="gray.200" justifyContent={"center"} w="full" py="2">
-            <Text>개인정보처리방침</Text>
+          <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
+            <Text color="white">개인정보처리방침</Text>
           </HStack>
-          <HStack bg="gray.200" justifyContent={"center"} w="full" py="2">
-            <Text>서비스이용약관</Text>
+          <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
+            <Text color="white">서비스이용약관</Text>
           </HStack>
-          <HStack bg="gray.200" justifyContent={"center"} w="full" py="2">
-            <Text>업체소개</Text>
+          <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
+            <Text color="white">업체소개</Text>
           </HStack>
-          <HStack bg="gray.200" justifyContent={"center"} w="full" py="2">
-            <Text>공지사항</Text>
+          <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
+            <Text color="white">공지사항</Text>
           </HStack>
-          <HStack bg="gray.200" justifyContent={"center"} w="full" py="2">
-            <Text>고객센터</Text>
+          <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
+            <Text color="white">고객센터</Text>
           </HStack>
-          <HStack bg="gray.200" justifyContent={"center"} w="full" py="2">
-            <Text>패밀리사이트</Text>
+          <HStack bg="gray.800" justifyContent={"center"} w="full" py="2">
+            <Text color="white">패밀리사이트</Text>
           </HStack>
         </Grid>
       </HStack>
@@ -44,6 +44,7 @@ export default function Footer() {
         w={{ sm: "360px", md: "3xl", lg: "5xl", xl: "6xl", "2xl": "7xl" }}
         py="8"
         h="full"
+        color="gray.200"
         justifyContent="space-between"
         // templateColumns={{
         //   sm: "repeat(1, 1fr)",
