@@ -23,12 +23,12 @@ export default function PortfolioItem({ titleText, contentText, imgUrl }) {
       >
         <VStack
           bg="yellow.600"
-          w="10"
-          h="10"
+          w={{ sm: "5", lg: "10" }}
+          h={{ sm: "5", lg: "10" }}
           position="absolute"
           rounded="full"
-          left="-5"
-          top="160px"
+          left={{ sm: "-2.5", lg: "-5" }}
+          top={{ sm: "80px", lg: "160px" }}
           align="center"
           justifyContent="center"
         >
