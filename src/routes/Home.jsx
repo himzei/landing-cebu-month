@@ -1,4 +1,6 @@
 import About from "../components/about/About";
+import Consulting from "../components/consulting/Consulting";
+import Curriculum from "../components/curriculum/Curriculum";
 import Main from "../components/main/Main";
 import Special from "../components/special/Special";
 
@@ -12,6 +14,10 @@ export default function Home() {
       <About />
 
       <Special />
+
+      <Curriculum />
+
+      <Consulting />
     </>
   );
 }

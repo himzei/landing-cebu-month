@@ -15,7 +15,6 @@ import {
   VStack,
   Text,
   Avatar,
-  useToast,
 } from "@chakra-ui/react";
 import Logo from "../assets/png/logo.png";
 import {
@@ -29,9 +28,8 @@ import { FaRegAddressBook } from "react-icons/fa";
 import { GoPerson } from "react-icons/go";
 import { RiMessage2Fill } from "react-icons/ri";
 import { useRef } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
-import { logout } from "../api";
 
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -59,27 +57,6 @@ export default function Header() {
   });
 
   const btnRef = useRef();
-
-  const toast = useToast();
-  const navigate = useNavigate();
-
-  const onLogout = async () => {
-    const toastId = toast({
-      title: "로그아웃 중입니다",
-      status: "loading",
-    });
-    const data = await logout();
-    console.log(data);
-    setTimeout(() => {
-      toast.update(toastId, {
-        status: "success",
-        title: "로그아웃!",
-        description: "다음에 또 만나요!",
-      });
-    }, 5000);
-    navigate("/");
-    onClose();
-  };
 
   return (
     <>
@@ -299,7 +276,7 @@ export default function Header() {
                         <Button p="0" variant="ghost">
                           <AiFillSetting color="gray" size="20" />
                         </Button>
-                        <Button p="0" variant="ghost" onClick={onLogout}>
+                        <Button p="0" variant="ghost">
                           <AiOutlineLogout color="gray" size="20" />
                         </Button>
                       </HStack>
