@@ -5,7 +5,7 @@ export default function CurriculumItem({ imageUrl, title, content }) {
     <Box w={{ sm: "320px", lg: "400px" }} cursor="pointer" mx="auto">
       <VStack w="full" role="group" spacing="0" rounded="lg" overflow="hidden">
         <Box
-          w="400px"
+          w={{ sm: "320px", lg: "400px" }}
           h="225px"
           position="relative"
           transition="0.4s"
@@ -40,7 +40,7 @@ export default function CurriculumItem({ imageUrl, title, content }) {
           </Text>
         </Box>
         <VStack
-          w="400px"
+          w={{ sm: "320px", lg: "400px" }}
           h="220px"
           bg="gray.100"
           p="4"
@@ -49,7 +49,7 @@ export default function CurriculumItem({ imageUrl, title, content }) {
           transition="0.4s"
           _groupHover={{ bg: "gray.900", color: "white" }}
         >
-          <Text>{content}</Text>
+          <Text fontSize={{ sm: "14", md: "16" }}>{content}</Text>
         </VStack>
       </VStack>
     </Box>

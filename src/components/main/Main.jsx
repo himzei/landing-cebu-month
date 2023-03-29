@@ -53,24 +53,24 @@ export default function Main() {
         <VStack>
           <Text
             fontWeight="200"
-            fontSize="90"
+            fontSize={{ sm: "48", md: "90" }}
             color="white"
-            lineHeight="85px"
+            lineHeight={{ sm: "60px", md: "85px" }}
             opacity="0.8"
           >
             학습공백없는
           </Text>
           <Text
             fontWeight="900"
-            fontSize="90"
+            fontSize={{ sm: "48", md: "90" }}
             color="white"
-            lineHeight="85px"
+            lineHeight={{ sm: "60px", md: "85px" }}
             opacity="0.9"
           >
             세부한달살기
           </Text>
         </VStack>
-        <VStack alignItems="flex-start" color="white" spacing="0">
+        <VStack alignItems="flex-start" color="white" spacing="0" px="8">
           <HStack>
             <BsCheck2Square />
             <Text>미국 특목고 & 대입 시험 무료 체험(중고등학생)</Text>

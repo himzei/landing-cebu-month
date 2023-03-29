@@ -4,7 +4,7 @@ import { IoMdCheckboxOutline } from "react-icons/io";
 export default function SpecialItem({ text }) {
   return (
     <Box
-      w="2xl"
+      w={{ sm: "360px", md: "2xl" }}
       bg="rgba(255, 255, 255, 0.05)"
       px="12"
       py="4"

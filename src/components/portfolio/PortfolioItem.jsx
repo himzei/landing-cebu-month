@@ -12,9 +12,9 @@ const animation = `${animationKeyframes} 2s ease-in-out infinite`;
 
 export default function PortfolioItem({ titleText, contentText, imgUrl }) {
   return (
-    <HStack h="480px" justifyContent="flex-end">
+    <HStack h={{ sm: "340px", lg: "480px" }} justifyContent="flex-end">
       <Box
-        w="20"
+        w={{ sm: "10", md: "20" }}
         borderLeft="1px"
         h="full"
         borderColor="yellow.600"
@@ -47,7 +47,11 @@ export default function PortfolioItem({ titleText, contentText, imgUrl }) {
         </VStack>
       </Box>
       <VStack alignItems="flex-start" spacing={8}>
-        <Box w="600px" h="320px" overflow="hidden">
+        <Box
+          w={{ sm: "300px", lg: "600px" }}
+          h={{ sm: "200px", lg: "320px" }}
+          overflow="hidden"
+        >
           <Image src={imgUrl} />
         </Box>
         <VStack alignItems="flex-start" spacing="0" h="100px">

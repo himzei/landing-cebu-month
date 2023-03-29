@@ -19,7 +19,7 @@ export default function Portfolio() {
     <VStack w="full" alignItems="center" py="16" spacing={0}>
       {/* 액티비티 */}
       <Grid
-        w="7xl"
+        w={{ sm: "360px", md: "4xl", lg: "7xl" }}
         templateColumns={{ sm: "repeat(1, 1fr)", md: "2fr 5fr" }}
         px="4"
       >
@@ -65,7 +65,7 @@ export default function Portfolio() {
 
       {/* 교재 / 부교재 */}
       <Grid
-        w="7xl"
+        w={{ sm: "360px", md: "4xl", lg: "7xl" }}
         templateColumns={{ sm: "repeat(1, 1fr)", md: "2fr 5fr" }}
         px="4"
       >
@@ -111,7 +111,7 @@ export default function Portfolio() {
 
       {/* 식사 */}
       <Grid
-        w="7xl"
+        w={{ sm: "360px", md: "4xl", lg: "7xl" }}
         templateColumns={{ sm: "repeat(1, 1fr)", md: "2fr 5fr" }}
         px="4"
       >
