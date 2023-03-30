@@ -24,9 +24,9 @@ export default function Special() {
         color="white"
         flexWrap={"wrap"}
       >
-        아이원 세부한달살기는{" "}
+        약속합니다!{" "}
         <Text as="span" color="yellow.600" fontWeight={700}>
-          하지 않습니다!
+          하지 않습니다!!
         </Text>
       </Text>
       <VStack w={{ sm: "sm", lg: "7xl" }} justifyContent="flex-start">
